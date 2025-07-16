@@ -1,10 +1,15 @@
 allow_embedding: false
-name: Material Design 2
-package_name: Material_Design_2
+metadata: {description: Test App, title: AIGit_app}
+name: AIGH_Test
+package_name: AIGH_Test
 runtime_options:
   client_version: '3'
-  server_spec: {base: python310-minimal}
-  server_version: python3-sandbox
+  server_spec: null
+  server_spec_disabled: {base: python310-minimal, requirements: ''}
+  server_version: python3-full
   version: 2
-services: []
+services:
+- client_config: {enable_v2: true}
+  server_config: {}
+  source: /runtime/services/tables.yml
 startup_form: Form1
