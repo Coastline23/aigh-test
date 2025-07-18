@@ -4,20 +4,20 @@ components:
     name: Name
     properties: {}
     type: Label
-  - layout_properties: {}
+  - layout_properties: {grid_position: 'PVKZGR,CCUHFS'}
     name: text_name
     properties: {placeholder: Enter name}
     type: TextBox
-  - layout_properties: {}
+  - layout_properties: {grid_position: 'OUSIEC,SHPKIN'}
     name: text_email
     properties: {placeholder: Enter email}
     type: TextBox
-  - layout_properties: {}
+  - layout_properties: {grid_position: 'IFWBYX,TEWTQA'}
     name: text_mobile
     properties: {placeholder: Enter mobile}
     type: TextBox
   - event_bindings: {click: save_button_click}
-    layout_properties: {}
+    layout_properties: {grid_position: 'JNMLCJ,HTAOUT'}
     name: save_button
     properties: {role: primary, text: Add Client}
     type: Button

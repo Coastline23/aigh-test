@@ -25,3 +25,7 @@ class RowTemplate1(RowTemplate1Template):
         if confirm("Are you sure you want to delete this client?"):
             self.item.delete()
             get_open_form().refresh_clients()
+
+    def form_show(self, **event_args):
+        """This method is called when the form is shown on the page"""
+        pass
