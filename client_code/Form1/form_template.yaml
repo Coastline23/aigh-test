@@ -4,6 +4,34 @@ components:
     name: Name
     properties: {}
     type: Label
+  - layout_properties: {}  # Sequential in ColumnPanel
+    name: text_name
+    properties:
+      placeholder: Enter name
+    type: TextBox
+  - layout_properties: {}
+    name: text_email
+    properties:
+      placeholder: Enter email
+    type: TextBox
+  - layout_properties: {}
+    name: text_mobile
+    properties:
+      placeholder: Enter mobile
+    type: TextBox
+  - layout_properties: {}
+    name: save_button
+    properties:
+      text: Add Client
+      role: primary
+    type: Button
+    event_bindings:
+      click: save_button_click
+  - layout_properties: {}
+    name: repeating_panel_1
+    properties:
+      item_template: Form1.RowTemplate1
+    type: RepeatingPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
