@@ -1,0 +1,27 @@
+container:
+  type: FlowPanel  # Horizontal layout for row
+components:
+  - type: Label
+    name: label_name
+    properties:
+      text: "{{self.item['name']}}"  # Data binding to row data
+  - type: Label
+    name: label_email
+    properties:
+      text: "{{self.item['email']}}"
+  - type: Label
+    name: label_mobile
+    properties:
+      text: "{{self.item['mobile']}}"
+  - type: Button
+    name: edit_button
+    properties:
+      text: Edit
+    event_bindings:
+      click: edit_button_click
+  - type: Button
+    name: delete_button
+    properties:
+      text: Delete
+    event_bindings:
+      click: delete_button_click
