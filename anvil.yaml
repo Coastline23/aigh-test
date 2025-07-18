@@ -1,4 +1,19 @@
 allow_embedding: false
+db_schema:
+  clients:
+    client: full
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: Name
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: email
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: mobile
+      type: string
+    server: full
+    title: Clients
 metadata: {description: Test App, title: AIGit_app}
 name: AIGH_Test
 package_name: AIGH_Test
