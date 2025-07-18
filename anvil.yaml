@@ -4,7 +4,7 @@ db_schema:
     client: full
     columns:
     - admin_ui: {order: 0, width: 200}
-      name: Name
+      name: name
       type: string
     - admin_ui: {order: 1, width: 200}
       name: email

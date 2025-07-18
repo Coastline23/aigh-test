@@ -1,27 +1,20 @@
-container:
-  type: FlowPanel  # Horizontal layout for row
 components:
-  - type: Label
-    name: label_name
-    properties:
-      text: "{{self.item['name']}}"  # Data binding to row data
-  - type: Label
-    name: label_email
-    properties:
-      text: "{{self.item['email']}}"
-  - type: Label
-    name: label_mobile
-    properties:
-      text: "{{self.item['mobile']}}"
-  - type: Button
-    name: edit_button
-    properties:
-      text: Edit
-    event_bindings:
-      click: edit_button_click
-  - type: Button
-    name: delete_button
-    properties:
-      text: Delete
-    event_bindings:
-      click: delete_button_click
+- name: label_name
+  properties: {text: '{{self.item[''name'']}}'}
+  type: Label
+- name: label_email
+  properties: {text: '{{self.item[''email'']}}'}
+  type: Label
+- name: label_mobile
+  properties: {text: '{{self.item[''mobile'']}}'}
+  type: Label
+- event_bindings: {click: edit_button_click}
+  name: edit_button
+  properties: {text: Edit}
+  type: Button
+- event_bindings: {click: delete_button_click}
+  name: delete_button
+  properties: {text: Delete}
+  type: Button
+container: {type: FlowPanel}
+is_package: true
